@@ -200,7 +200,7 @@
     </section>
     <!-- /.section-3 -->
   
-    <section class="section-4" id="advantages">
+    <section class="section-4 section" id="advantages">
       <div class="container">
         <div class="section-4__wrapper">
           <div class="section-4__images">
@@ -226,10 +226,10 @@
     </section>
     <!-- /.section-4 -->
   
-    <section class="section-5" id="business">
+    <section class="section-5 section" id="business">
       <div class="container">
         <div class="section-5__wrapper">
-          <h2 class="section__title section-5__title">Мы работаем только с проверенными компаниями:</h2>
+          <h2 class="section__title section-5__title">Мы работаем только с проверенными компаниями</h2>
   
           <div class="slick-slider__business">
   
@@ -267,7 +267,7 @@
     </section>
     <!-- /.section-5 -->
   
-    <section class="section-6" id="order">
+    <section class="section-6 section" id="order">
       <div class="container">
         <div class="section-6__wrapper">
           <h2 class="section__title white section-6--center">Заботы по перевозке грузов оставьте нам!</h2>
@@ -335,7 +335,7 @@
     </section>
     <!-- /.section-6 -->
   
-    <section class="section-7" id="contacts">
+    <section class="section-7 section" id="contacts">
       <div class="container">
         <div class="section-7__wrapper">
           <h2 class="section__title section-7--center">Контакты</h2>
@@ -347,13 +347,13 @@
         <!-- /.section-7__wrapper -->
       </div>
       <!-- /.container -->
+
+      <div class="section-7__map">
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A642c3866aafa9ea4a2ec180587aa07bcda292dd863a3df61071ba315f112dbdc&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
     </section>
     <!-- /.section-7 -->
   </main>
-
-  <div class="map">
-    <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A642c3866aafa9ea4a2ec180587aa07bcda292dd863a3df61071ba315f112dbdc&amp;width=100%25&amp;height=446&amp;lang=ru_RU&amp;scroll=false"></script>
-  </div>
 
   <footer class="footer">
     <div class="container">
@@ -415,31 +415,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('.slick-slider__business').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<div class="slick-slider__business--img-prev"></div>',
-        nextArrow: '<div class="slick-slider__business--img-next"></div>',
-        autoplay: true,
-        autoplaySpeed: 2500,
-        waitForAnimate: false
-      });
-    });
-    $(document).ready(function(){
-      $('.slick-slider__production').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        prevArrow: '<div class="slick-slider__production--img-prev"></div>',
-        nextArrow: '<div class="slick-slider__production--img-next"></div>',
-        autoplay: true,
-        autoplaySpeed: 2500
-      });
-    });
-  </script>
   
 </body>
 </html>
