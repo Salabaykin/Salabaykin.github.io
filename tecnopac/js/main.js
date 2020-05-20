@@ -3,12 +3,15 @@ const burgerNav = document.querySelector('.header__burger-nav'),
       burgerLink = burgerNav.querySelectorAll('.header__burger-link'),
       header = document.querySelector('.header'),
       headerWrapper = header.querySelector('.header__wrapper'),
-      logo = headerWrapper.querySelector('.logo');
+      logo = headerWrapper.querySelector('.logo'),
+      overlay = document.querySelector('.overlay');
 
 const func = {
       toggleMenu: () => {
         burgerNav.classList.toggle('header__burger-nav--active');
         burgerButton.classList.toggle('header__burger-button--active');
+        document.body.classList.toggle('hidden');
+        overlay.classList.toggle('overlay-nav');
       },
       burgerButton: (event) => {
         event.preventDefault();
@@ -29,11 +32,11 @@ const func = {
         });
       },
       scrollNav: (event) => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 10) {
           header.style.backgroundColor = '#05797a';
           headerWrapper.style = 'height: 80px;';
-          logo.style = 'width: 160px; display: flex; align-items: center; transition: 0.3s ease';
-        } else if (window.scrollY < 50) {
+          logo.style = 'width: 150px; display: flex; align-items: center; transition: 0.3s ease';
+        } else if (window.scrollY < 10) {
           header.style.backgroundColor = '';
           headerWrapper.style = '';
           logo.style = '';
