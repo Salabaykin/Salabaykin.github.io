@@ -66,6 +66,17 @@ $(document).ready(function() {
           dots: false,
           arrows: false
         }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          infinite: false,
+          prevArrow: '<div class="foundation-slider-prev"><svg class="foundation-slider-icon-prev"><use xlink:href="img/sprite.svg#prev"></use></svg></div>',
+          nextArrow: '<div class="foundation-slider-next"><svg class="foundation-slider-icon-next"><use xlink:href="img/sprite.svg#prev"></use></svg></div>',
+          slidesToScroll: 1,
+          arrows: true
+        }
       }
     ]
   });
@@ -273,5 +284,13 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $("body").on('click', '[href*="#"]', function(e){
+    var fixedOffset = 150;
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixedOffset }, 1000);
+    e.preventDefault();
+  });
+
+  $('[type=tel]').mask('+7(000)00-00-000', { placeholder: "Телефон" });
   
 });

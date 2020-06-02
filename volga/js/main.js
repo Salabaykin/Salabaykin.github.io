@@ -8,14 +8,17 @@ const func = {
   toggleMenu: function() {
     menu.classList.toggle('menu-active');
     popupClose.classList.toggle('menu-active');
+    document.body.style.overflow = 'hidden';
   },
   navLink: function(el) {
     el.addEventListener('click', function() {
       func.toggleMenu();
+      document.body.style.overflow = '';
     });
   },
   close: function(e) {
     func.toggleMenu();
+    document.body.style.overflow = '';
   },
   trackScroll: function() {
     const scrolled = window.pageYOffset;
