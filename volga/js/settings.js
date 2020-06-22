@@ -231,11 +231,11 @@ $(document).ready(function() {
   
   $('.foundation-slider').slick({
     slidesToShow: 3,
-    prevArrow: '<div class="feedback-slider-prev"><svg class="feedback-slider-icon-prev"><use xlink:href="img/sprite.svg#prev"></use></svg></div>',
-    nextArrow: '<div class="feedback-slider-next"><svg class="feedback-slider-icon-next"><use xlink:href="img/sprite.svg#prev"></use></svg></div>',
+    prevArrow: '<div class="foundation-slider-prev"><svg class="foundation-slider-icon-prev"><use xlink:href="img/sprite.svg#prev"></use></svg></div>',
+    nextArrow: '<div class="foundation-slider-next"><svg class="foundation-slider-icon-next"><use xlink:href="img/sprite.svg#prev"></use></svg></div>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1050,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
