@@ -4,7 +4,7 @@ $(document).ready(function() {
   var close = $('.modal__close'); 
   var modal = $('.modal'); 
   
-  openModal.click( function(event){ 
+  openModal.click( function(event){
   
   event.preventDefault(); 
   
@@ -14,6 +14,10 @@ $(document).ready(function() {
       document.body.classList.add('hidden');
     }
     open();
+    
+    if (this.dataset.modalid) {
+      document.querySelector(`#${this.dataset.modalid}`).classList.toggle('open');
+    }
   });
   
   close.click( function(){
