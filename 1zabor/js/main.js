@@ -120,7 +120,7 @@ $(document).ready(function() {
   var func = {
     trackScroll: function() {
       var scrolled = window.pageYOffset;
-      var coords = document.documentElement.clientHeight;
+      var coords = (document.documentElement.clientHeight - 50);
     
       if (scrolled > coords) {
         up.classList.add('up-show');
@@ -142,7 +142,7 @@ $(document).ready(function() {
 
   window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrolled !== 0) {
+    if (scrolled >= 69) {
       document.querySelector('.top-menu').classList.add('top-menu--fixed');
     } else {
       document.querySelector('.top-menu').classList.remove('top-menu--fixed');
