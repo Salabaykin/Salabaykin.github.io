@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nefonar</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="page">
+
+      <header class="header">
+
+          <div class="container">
+  
+              <div class="header__wrapper">
+  
+                  <div class="logo">
+                      <img src="images/logo.png" alt="Nefonar">
+                  </div>
+                  <!-- /.logo -->
+          
+                  <div class="nav-wrapper">
+
+                    <nav class="nav">
+                      <ul class="nav__list">
+                          <li><a class="nav__link" href="#"><span class="info"></span> О сервисе Nefonar</a></li>
+                          <li><a class="nav__link" href="#"><span class="plus"></span> Как добавить объявление?</a></li>
+                      </ul>
+                    </nav>
+                    <!-- /nav -->
+          
+                    <div class="sign-in">
+                        <a class="sign-in__link" href="#">Войти</a>
+                        <a class="sign-in__link reg" href="#">Регистрация</a>
+                    </div>
+                    <!-- /.sign-in -->
+
+                  </div>
+                  <!-- /.nav-wrapper -->
+
+                  <div class="nav-mobile">
+                    <svg class="nav-mobile__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 459 459">
+                      <path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z"/>
+                    </svg>
+                  </div>
+                  <!-- /.nav-mobile -->
+  
+              </div>
+              <!-- /.header__wrapper -->
+  
+          </div>
+          <!-- /.container -->
+  
+      </header>
+      <!-- /.header -->
+  
+      <div class="container">
+
+        <main class="content">
+    
+          <div class="group">
+
+              <div class="group-add">
+                <a href="#" class="group-add__button">
+                  <span>
+                    <svg class="add-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/>
+                    </svg>
+                  </span> 
+                  Добавить новую группу</a>
+              </div>
+              <!-- /.group-add -->
+
+              <div class="group-search">
+                <span>
+                  <svg class="group-search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"></path></svg>
+                </span>
+                <input class="group-search__input" type="text" name="search-block" placeholder="Поиск...">
+              </div>
+              <!-- /.group-search -->
+
+              <div class="group-list">
+
+                <div id="accordion" class="accordion">
+
+                  <div class="accordion-item show">
+                    <div class="accordion-item__header">
+                      Продажа недвижимости
+                    </div>
+                    <!-- /.accordion-item__header -->
+                    <div class="accordion-item__content">
+
+                      <div class="accordion-item__wrapper">
+                      
+                        <a href="#" class="accordion-group">
+                          <div class="accordion-group__images">
+                            <img src="images/group-img.jpg" alt="Фото группы">
+                          </div>
+                          <!-- /.accordion-group__images -->
+                          <div class="accordion-group__wrapper">
+                            <div class="accordion-group__title">
+                              <div class="accordion-group__title-text">Квартиры 5-7 млн</div>
+                              <div class="accordion-group__title-date">Воскресенье</div>
+                            </div>
+                            <div class="accordion-group__message">Не понимаю вопроса</div>
+                          </div>
+                          <!-- /.accordion-group__wrapper -->
+                        </a>
+                        <!-- /.accordion-group -->
+
+                        <a href="#" class="accordion-group">
+                          <div class="accordion-group__images">
+                            <img src="images/group-img-2.jpg" alt="Фото группы">
+                          </div>
+                          <!-- /.accordion-group__images -->
+                          <div class="accordion-group__wrapper">
+                            <div class="accordion-group__title">
+                              <div class="accordion-group__title-text">Вторичка в Адлере</div>
+                              <div class="accordion-group__title-date">Вчера</div>
+                            </div>
+                            <div class="accordion-group__message">Акция на 2 недели, скидка 7 тысяч</div>
+                          </div>
+                          <!-- /.accordion-group__wrapper -->
+                        </a>
+                        <!-- /.accordion-group -->
+
+                        <a href="#" class="accordion-group">
+                          <div class="accordion-group__images">
+                            <img src="images/group-img-2.jpg" alt="Фото группы">
+                          </div>
+                          <!-- /.accordion-group__images -->
+                          <div class="accordion-group__wrapper">
+                            <div class="accordion-group__title">
+                              <div class="accordion-group__title-text">Вторичка в Адлере</div>
+                              <div class="accordion-group__title-date">Вчера</div>
+                            </div>
+                            <div class="accordion-group__message">Акция на 2 недели, скидка 7 тысяч</div>
+                          </div>
+                          <!-- /.accordion-group__wrapper -->
+                        </a>
+                        <!-- /.accordion-group -->
+
+                        <a href="#" class="accordion-group">
+                          <div class="accordion-group__images">
+                            <img src="images/group-img-2.jpg" alt="Фото группы">
+                          </div>
+                          <!-- /.accordion-group__images -->
+                          <div class="accordion-group__wrapper">
+                            <div class="accordion-group__title">
+                              <div class="accordion-group__title-text">Вторичка в Адлере</div>
+                              <div class="accordion-group__title-date">Вчера</div>
+                            </div>
+                            <div class="accordion-group__message">Акция на 2 недели, скидка 7 тысяч</div>
+                          </div>
+                          <!-- /.accordion-group__wrapper -->
+                        </a>
+                        <!-- /.accordion-group -->
+
+                        <a href="#" class="accordion-group active">
+                          <div class="accordion-group__images">
+                            <img src="images/group-img-3.jpg" alt="Фото группы">
+                          </div>
+                          <!-- /.accordion-group__images -->
+                          <div class="accordion-group__wrapper">
+                            <div class="accordion-group__title">
+                              <div class="accordion-group__title-text">Студии для отдыха</div>
+                              <div class="accordion-group__title-date">Пятница</div>
+                            </div>
+                            <div class="accordion-group__message">Ожидаю подтверждения поступления</div>
+                          </div>
+                          <!-- /.accordion-group__wrapper -->
+                        </a>
+                        <!-- /.accordion-group -->
+
+                      </div>
+                      <!-- /.accordion-item__wrapper -->
+
+                    </div>
+                    <!-- /.accordion-item__content -->
+                  </div>
+                  <!-- /.accordion-item -->
+
+                  <div class="accordion-item">
+                    <div class="accordion-item__header">
+                      Новостройки
+                    </div>
+                    <!-- /.accordion-item__header -->
+                    <div class="accordion-item__content">
+                      
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Квартиры 5-7 млн</div>
+                            <div class="accordion-group__title-date">Воскресенье</div>
+                          </div>
+                          <div class="accordion-group__message">Не понимаю вопроса</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img-2.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Вторичка в Адлере</div>
+                            <div class="accordion-group__title-date">Вчера</div>
+                          </div>
+                          <div class="accordion-group__message">Акция на 2 недели, скидка 7 тысяч</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img-3.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Студии для отдыха</div>
+                            <div class="accordion-group__title-date">Пятница</div>
+                          </div>
+                          <div class="accordion-group__message">Ожидаю подтверждения поступления</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                    </div>
+                    <!-- /.accordion-item__content -->
+                  </div>
+                  <!-- /.accordion-item -->
+
+                  <div class="accordion-item">
+                    <div class="accordion-item__header">
+                      Аренда недвижимости
+                    </div>
+                    <!-- /.accordion-item__header -->
+                    <div class="accordion-item__content">
+                      
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img-3.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Студии для отдыха</div>
+                            <div class="accordion-group__title-date">Пятница</div>
+                          </div>
+                          <div class="accordion-group__message">Ожидаю подтверждения поступления</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                    </div>
+                    <!-- /.accordion-item__content -->
+                  </div>
+                  <!-- /.accordion-item -->
+
+                  <div class="accordion-item">
+                    <div class="accordion-item__header">
+                      На проверке
+                    </div>
+                    <!-- /.accordion-item__header -->
+                    <div class="accordion-item__content">
+                      
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Квартиры 5-7 млн</div>
+                            <div class="accordion-group__title-date">Воскресенье</div>
+                          </div>
+                          <div class="accordion-group__message">Не понимаю вопроса</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img-2.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Вторичка в Адлере</div>
+                            <div class="accordion-group__title-date">Вчера</div>
+                          </div>
+                          <div class="accordion-group__message">Акция на 2 недели, скидка 7 тысяч</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                    </div>
+                    <!-- /.accordion-item__content -->
+                  </div>
+                  <!-- /.accordion-item -->
+
+                  <div class="accordion-item">
+                    <div class="accordion-item__header">
+                      Новые группы
+                    </div>
+                    <!-- /.accordion-item__header -->
+                    <div class="accordion-item__content">
+                      
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Квартиры 5-7 млн</div>
+                            <div class="accordion-group__title-date">Воскресенье</div>
+                          </div>
+                          <div class="accordion-group__message">Не понимаю вопроса</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img-2.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Вторичка в Адлере</div>
+                            <div class="accordion-group__title-date">Вчера</div>
+                          </div>
+                          <div class="accordion-group__message">Акция на 2 недели, скидка 7 тысяч</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                    </div>
+                    <!-- /.accordion-item__content -->
+                  </div>
+                  <!-- /.accordion-item -->
+
+                  <div class="accordion-item">
+                    <div class="accordion-item__header">
+                      Избранное
+                    </div>
+                    <!-- /.accordion-item__header -->
+                    <div class="accordion-item__content">
+                      
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Квартиры 5-7 млн</div>
+                            <div class="accordion-group__title-date">Воскресенье</div>
+                          </div>
+                          <div class="accordion-group__message">Не понимаю вопроса</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                      <a href="#" class="accordion-group">
+                        <div class="accordion-group__images">
+                          <img src="images/group-img-2.jpg" alt="Фото группы">
+                        </div>
+                        <!-- /.accordion-group__images -->
+                        <div class="accordion-group__wrapper">
+                          <div class="accordion-group__title">
+                            <div class="accordion-group__title-text">Вторичка в Адлере</div>
+                            <div class="accordion-group__title-date">Вчера</div>
+                          </div>
+                          <div class="accordion-group__message">Акция на 2 недели, скидка 7 тысяч</div>
+                        </div>
+                        <!-- /.accordion-group__wrapper -->
+                      </a>
+                      <!-- /.accordion-group -->
+
+                    </div>
+                    <!-- /.accordion-item__content -->
+                  </div>
+                  <!-- /.accordion-item -->
+
+                </div>
+                <!-- /.accordion -->
+
+              </div>
+              <!-- /.group-list -->
+
+          </div>
+          <!-- /.group -->
+
+          <div class="group-content" id="group-content">
+
+            <div class="group-content__wrapper">
+
+              <div class="group-content__head">
+                <div class="group-content__images">
+                  <img src="images/group-img-3.jpg" alt="Фото группы">
+                </div>
+                <div class="group-content__title">
+                  <div class="group-content__title-text">Студии для отдыха</div>
+                  <div class="group-content__title-num">Участников: <span>158</span></div>
+                </div>
+                <!-- <div class="group-content__search">
+                  <form class="form-search">
+                    <input class="form-search__input" type="text" placeholder="Поиск сообщений...">
+                    <span class="form-search__btn">
+                      <svg class="group-content__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"></path></svg>
+                    </span>
+                  </form>
+                </div> -->
+                <div class="group-content__news">
+                  <span>
+                    <svg class="group-content__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"></path></svg>
+                  </span>
+                </div>
+              </div>
+              <!-- /.group-content__head -->
+  
+              <div class="group-content__main">
+  
+                <div class="wrapper">
+
+                  <div class="group-message-load">
+                    <a class="group-message-load__link" href="#">Ранее</a>
+                  </div>
+                  <!-- /.group-message-load -->
+    
+                  <div class="group-message-date">
+                    <div class="group-message-date__text">14.08.2020</div>
+                  </div>
+                  <!-- /.group-message-date -->
+    
+                  <div class="group-message">
+                    <div class="group-message__head">
+                      <a href="#" class="group-message__head-tel">+7 967 327-09-84</a>
+                      <div class="group-message__whatsapp">WhatsApp</div>
+                    </div>
+                    <div class="group-message__img">
+                      <img src="https://lingualeo.com/ru/blog/wp-content/uploads/sites/4/2017/09/developer.png" alt="Photo">
+                    </div>
+                    <div class="group-message__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores, voluptates alias laboriosam velit facere repellendus consequuntur ipsum quidem officiis.
+                    </div>
+                    <div class="group-message__time">
+                      12:54
+                    </div>
+                  </div>
+                  <!-- /.group-message -->
+
+                  <div class="group-message">
+                    <div class="group-message__head">
+                      <a href="#" class="group-message__head-tel">+7 967 327-09-84</a>
+                      <div class="group-message__whatsapp">WhatsApp</div>
+                    </div>
+                    <div class="group-message__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore, eveniet, laborum iusto a est consequuntur quod beatae aliquid harum deleniti, assumenda nulla consequatur? Natus, fuga. Fugit eligendi necessitatibus repudiandae commodi laudantium dolor. Quas velit consequatur, eos consequuntur ipsum provident? Sequi consequuntur libero architecto doloremque qui earum! Inventore, aspernatur modi.
+                    </div>
+                    <div class="group-message__time">
+                      12:54
+                    </div>
+                  </div>
+                  <!-- /.group-message -->
+
+                  <div class="group-message">
+                    <div class="group-message__head">
+                      <a href="#" class="group-message__head-tel">+7 967 327-09-84</a>
+                      <div class="group-message__whatsapp">WhatsApp</div>
+                    </div>
+                    <div class="group-message__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore, eveniet, laborum iusto a est consequuntur quod beatae aliquid harum deleniti, assumenda nulla consequatur? Natus, fuga. Fugit eligendi necessitatibus repudiandae commodi laudantium dolor. Quas velit consequatur, eos consequuntur ipsum provident? Sequi consequuntur libero architecto doloremque qui earum! Inventore, aspernatur modi.
+                    </div>
+                    <div class="group-message__time">
+                      12:54
+                    </div>
+                  </div>
+                  <!-- /.group-message -->
+
+                  <div class="group-message group-message-my-message">
+                    <div class="group-message__head">
+                      <a href="#" class="group-message__head-tel">+7 967 327-09-84</a>
+                      <div class="group-message__whatsapp">WhatsApp</div>
+                    </div>
+                    <div class="group-message__text">
+                      Lorem ipsum dolor sit amet.
+                    </div>
+                    <div class="group-message__time">
+                      12:54
+                    </div>
+                    
+                  </div>
+                  <!-- /.group-message -->
+  
+                  <div class="group-message">
+                    <div class="group-message__head">
+                      <a href="#" class="group-message__head-tel">+7 967 327-09-84</a>
+                      <div class="group-message__whatsapp">WhatsApp</div>
+                    </div>
+                    <div class="group-message__doc">
+                      <div class="group-message__doc-img"></div>
+                      <div class="group-message__doc-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur rem esse error architecto totam modi numquam? Perferendis, voluptatibus eaque!
+                      </div>
+                      <div class="group-message__doc-download">
+                        <svg class="group-message__doc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" width="34" height="34"><path d="M17 2c8.3 0 15 6.7 15 15s-6.7 15-15 15S2 25.3 2 17 8.7 2 17 2m0-1C8.2 1 1 8.2 1 17s7.2 16 16 16 16-7.2 16-16S25.8 1 17 1z"></path><path d="M22.4 17.5h-3.2v-6.8c0-.4-.3-.7-.7-.7h-3.2c-.4 0-.7.3-.7.7v6.8h-3.2c-.6 0-.8.4-.4.8l5 5.3c.5.7 1 .5 1.5 0l5-5.3c.7-.5.5-.8-.1-.8z"></path></svg>
+                      </div>
+                    </div>
+                    <div class="group-message__format">
+                      WMV
+                    </div>
+                    <div class="group-message__time">
+                      12:54
+                    </div>
+                  </div>
+                  <!-- /.group-message -->
+
+                </div>
+                <!-- /.wrapper -->
+  
+              </div>
+              <!-- /.group-content__main -->
+
+            </div>
+            <!-- /.group-content__wrapper -->
+
+            <div class="search-block open">
+              <div class="search-block__head">
+                <div class="search-block__head-btn">
+                  <svg class="group-content__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.1 17.2l-5.3-5.3 5.3-5.3-1.8-1.8-5.3 5.4-5.3-5.3-1.8 1.7 5.3 5.3-5.3 5.3L6.7 19l5.3-5.3 5.3 5.3 1.8-1.8z"></path></svg>
+                </div>
+                <div class="search-block__head-text">Лента новостей</div>
+              </div>
+              <!-- /.search-block__head -->
+
+              <!-- <div class="search-block__search">
+                <span>
+                  <svg class="search-block__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"></path></svg>
+                </span>
+                <input class="search-block__input" type="text" name="search-block" placeholder="Поиск...">
+              </div> -->
+              <!-- /.search-block__search -->
+
+              <div class="search-block__content">
+                Тут лента новостей
+              </div>
+              <!-- /.search-block__content -->
+            </div>
+            <!-- /.search-block -->
+
+          </div>
+          <!-- /.group-content -->
+    
+        </main>
+        <!-- /.content -->
+
+      </div>
+      <!-- /.container -->
+  
+      <footer class="footer" style="background-image: url(images/footer-bg.png);">
+  
+          <div class="container">
+  
+              <div class="footer__text">
+                  Сочи, 2020 ©
+                  <a href="#">Политика конфиденциальности</a>
+              </div>
+              <!-- /.footer__pol -->
+  
+          </div>
+          <!-- /.container -->
+  
+      </footer>
+      <!-- /.footer -->
+
+    </div>
+    <!-- /.page -->
+
+    <div class="modal">
+      <div class="modal__wrapper">
+        <div class="modal__content">
+          <div class="modal__head">
+            <div class="modal__close">
+              <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M19.1 17.2l-5.3-5.3 5.3-5.3-1.8-1.8-5.3 5.4-5.3-5.3-1.8 1.7 5.3 5.3-5.3 5.3L6.7 19l5.3-5.3 5.3 5.3 1.8-1.8z"></path></svg>
+            </div>
+            <div class="modal__title">Добавить новую группу</div>
+          </div>
+          <!-- /.modal__head -->
+          <div class="modal__body">
+            <div class="add-group">
+              <div class="add-group__num">
+                1
+              </div>
+              <!-- /.add-group__num -->
+              <div class="add-group__text">
+                Чтобы добавить Вашу группу на сайт, Вы должен добавить к себе в группу нашего бота по номеру телефона:
+                <span>+79511234567</span>
+              </div>
+              <!-- /.add-group__text -->
+            </div>
+            <!-- /.add-group -->
+            <div class="add-group">
+              <div class="add-group__num">
+                2
+              </div>
+              <!-- /.add-group__num -->
+              <div class="add-group__text">
+                Либо отправьте нам ссылку-приглашение в вашу группу:
+                <div class="add-group__wrapper"> 
+                  <input class="add-group__input" type="text" name="link" placeholder="Cсылка-приглашение...">
+                  <a class="add-group__submit" href="#">Отправить</a>
+                </div>
+              </div>
+              <!-- /.add-group__text -->
+            </div>
+            <!-- /.add-group -->
+          </div>
+        </div>
+        <!-- /.modal__content -->
+      </div>
+      <!-- /.modal__wrapper -->
+    </div>
+    <!-- /.modal -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/OverlayScrollbars.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -7,8 +7,24 @@
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="css/style.min.css" />
+        <style>
+            @media ( max-width: 1024px ) {
+                .promo {
+                    /* background-image: url('images/promo/mob-promo-bg.jpg') !important; */
+                    background-position: right bottom !important;   
+                }   
+            }
+            @media ( max-width: 620px ) {
+                .promo {
+                    /* background-image: url('images/promo/xs-mob-promo-bg.png') !important; */
+                    background-position: right top !important;   
+                    background-color: #fe4b64 !important;   
+                }
+            }
+        </style>
     </head>
-    <body>
+    <body class="body">
+
         <div class="overlay"></div>
         <div class="menu">
             <div class="menu__wrapper">
@@ -220,20 +236,6 @@
                     </div>
 
                     <div class="menu__block">
-                        <div class="menu-search">
-                            <form action="#" class="menu-search__form">
-                                <input
-                                    class="menu-search__input"
-                                    type="search"
-                                    name="menu-search"
-                                    pattern=".*\S.*"
-                                    placeholder="Поиск по сайту..."
-                                    required
-                                />
-                            </form>
-                        </div>
-
-                        <a href="#" class="button menu__button">Партнёрам</a>
 
                         <div class="menu-email">
                             <svg class="header-top__icon menu--mob-icon">
@@ -306,6 +308,7 @@
                     </div>
 
                     <div class="contacts">
+                        <a href="#" class="button button--red button__modal-question">Задать вопрос ректору</a>
                         <ul>
                             <li>
                                 Приемная комиссия:
@@ -338,6 +341,7 @@
         <!-- /.menu -->
 
         <header class="header">
+
             <div class="header-top">
                 <div class="container">
                     <div class="header-top__wrapper">
@@ -356,25 +360,63 @@
                             <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
                         </div>
                         <div class="header-top__info">
-                            <a
-                                class="button header-top--button"
-                                href="/educational-organization.html"
-                                >Сведения об образовательной организации</a
-                            >
-                            <div class="header-top__eye">
-                                <svg class="header-top__icon">
-                                    <use
-                                        xlink:href="images/sprite.svg#eye"
-                                    ></use>
-                                </svg>
-                                <a href="#">Для слабовидящих</a>
-                            </div>
+                            <a class="button header-top--button" href="/educational-organization.html">
+                                Сведения об образовательной организации
+                            </a>
+                            
+                            <span class="aa-hide" itemprop="Copy">
+                                <div class="header-top__eye">
+                                    
+                                    <a class="fl-r eye--button" href="/?set-aa=special" data-aa-on="" title="Aa">
+                                        <svg class="header-top__icon">
+                                            <use
+                                                xlink:href="images/sprite.svg#eye"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                        
+                                    <a class="fl-r eye--link" href="/?set-aa=special" data-aa-on="" title="Aa"><span class="hide">Для слабовидящих</span></a>
+                                    
+                                </div>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <!-- /.container -->
             </div>
             <!-- /.header-top -->
+
+            <div class="special-settings">
+                <div class="container special-panel-container">
+                    <div class="content">
+                        <div class="aa-block aaFontsize">
+                            <div class="fl-l">Размер:</div>
+                            <div class="font-size-block">
+                                <a class="aaFontsize-small a-current" data-aa-fontsize="small" href="#" title="Уменьшенный размер шрифта">A</a>
+                                <a class="aaFontsize-normal" href="#" data-aa-fontsize="normal" title="Нормальный размер шрифта">A</a>
+                                <a class="aaFontsize-big" data-aa-fontsize="big" href="#" title="Увеличенный размер шрифта">A</a>
+                            </div>
+                        </div>
+                        <div class="aa-block aaColor">
+                            Цвет:
+                            <div class="font-size-block">
+                                <a class="aaColor-black a-current" data-aa-color="black" href="#" title="Черным по белому"><span>C</span></a>
+                                <a class="aaColor-yellow" data-aa-color="yellow" href="#" title="Желтым по черному"><span>C</span></a>
+                                <a class="aaColor-blue" data-aa-color="blue" href="#" title="Синим по голубому"><span>C</span></a>
+                            </div>
+                        </div>
+        
+                        <div class="aa-block aaImage">
+                            Изображения:
+                        <span class="aaImage-wrapper">
+                            <a class="aaImage-on a-current" data-aa-image="on" href="#">Вкл.</a>
+                            <a class="aaImage-off" data-aa-image="off" href="#">Выкл.</a>
+                        </span>
+                        </div>
+                        <span class="aa-block"><a href="/?set-aa=normal" data-aa-off=""><i class="icon icon-special-version"></i> Обычная версия сайта</a></span>
+                    </div>
+                </div>
+            </div>
 
             <div class="header-bottom">
                 <div class="container header-bottom__container">
@@ -395,20 +437,25 @@
                         <nav class="nav">
                             <ul>
                                 <li class="nav__list">
+                                    <a href="/">Об институте</a>
+                                </li>
+                                <li class="nav__list">
+                                    <a href="/news-list.html">Новости</a>
+                                </li>
+                                <li class="nav__list">
                                     <a href="#">АБИТУРИЕНТУ</a>
                                 </li>
                                 <li class="nav__list">
-                                    <a href="#">СТУДЕНТУ</a>
+                                    <a href="/student.html">СТУДЕНТУ</a>
                                 </li>
                                 <li class="nav__list">
                                     <a href="#">ВЫПУСКНИКУ</a>
                                 </li>
-                                <li class="nav__list"><a href="#">НАУКА</a></li>
                                 <li class="nav__list">
-                                    <a href="#">ВАКАНСИИ</a>
+                                    <a href="#">ВЫПУСКНИКУ 2</a>
                                 </li>
                                 <li class="nav__list">
-                                    <a href="#">COVID-19 Инфо</a>
+                                    <a href="#">ВЫПУСКНИКУ 3</a>
                                 </li>
                             </ul>
                         </nav>
@@ -449,10 +496,11 @@
                 </div>
             </div>
             <!-- /.header-bottom -->
+
         </header>
         <!-- /.header -->
 
-        <section class="promo">
+        <section class="promo" style="background-image: url('../images/promo/promo-bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center top;">
             <div class="promo-slider swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -576,7 +624,7 @@
         <section class="news">
             <div class="container">
                 <div class="news__head">
-                    <h3 class="title">Новости, события и анонсы</h3>
+                    <h3 class="title"> </h3>
                     <div class="news__more">
                         <a href="/news-list.html" class="button news__button"
                             >Все новости, события и анонсы</a
@@ -586,13 +634,14 @@
 
                 <div class="news__wrapper">
 
-                    <div class="news-section news-section_double news-section_reverse">
+                    <div class="news-section news-section_reverse--left">
+
                         <div class="news-section__item">
                             <a href="#">
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
                                     "
                                 ></div>
                             </a>
@@ -602,13 +651,72 @@
                                         >Новость</a
                                     >
                                     <div class="news-section__date">
-                                        31 август 2020
+                                        5 август 2020
                                     </div>
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
+                                        11 Ключевая ставка
+                                    </h4>
+                                </a>
+                                <p class="news-section__text crop-text">
+                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Страну лучше, переулка предупредила гор возвращайся раз! Выйти, дорогу страну продолжил, безопасную lorem парадигматическая текстов коварных домах буквенных пор, проектах необходимыми залетают грамматики вскоре буквоград знаках ты реторический свой все. Пояс его своих от всех она переписали дал на берегу подпоясал семь, ты эта жизни это последний даль жаренные маленький текст заманивший сих имеет запятых за они дорогу несколько. Журчит маленький жаренные за необходимыми океана она всеми текстов жизни, скатился своих рекламных?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.news-section__item -->
+
+                        <div class="news-section__item">
+                            <a href="#">
+                                <div
+                                    class="news-section__images"
+                                    style="
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
+                                    "
+                                ></div>
+                            </a>
+                            <div class="news-section__content">
+                                <div class="news-section__head">
+                                    <a href="#" class="news-section__category"
+                                        >Новость</a
+                                    >
+                                    <div class="news-section__date">
+                                        4 август 2020
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h4 class="news-section__title">
+                                        22 Ключевая
+                                    </h4>
+                                </a>
+                                <p class="news-section__text crop-text">
+                                    В Золотой век войдут люди, которые научатся объединяться. И объединение имеет тоже свой закон: две ауры усиливают друг друга в 7 раз, если люди – единомышленники, волна одинаковая, в одну цель направлена. Три человека – 7 в квадрате, то есть в 49 раз.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.news-section__item -->
+
+                        <div class="news-section__item">
+                            <a href="#">
+                                <div
+                                    class="news-section__images"
+                                    style="
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
+                                    "
+                                ></div>
+                            </a>
+                            <div class="news-section__content">
+                                <div class="news-section__head">
+                                    <a href="#" class="news-section__category"
+                                        >Новость</a
+                                    >
+                                    <div class="news-section__date">
+                                        3 август 2020
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h4 class="news-section__title">
+                                        33 Ключевая ставка:
                                     </h4>
                                 </a>
                                 <p class="news-section__text crop-text">
@@ -628,7 +736,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
                                     "
                                 ></div>
                             </a>
@@ -638,13 +746,12 @@
                                         >Новость</a
                                     >
                                     <div class="news-section__date">
-                                        31 август 2020
+                                        2 август 2020
                                     </div>
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
+                                        44 Ключевая
                                     </h4>
                                 </a>
                                 <p class="news-section__text crop-text">
@@ -664,7 +771,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('images/news/news-images.jpg');
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
                                     "
                                 ></div>
                             </a>
@@ -674,51 +781,12 @@
                                         >Новость</a
                                     >
                                     <div class="news-section__date">
-                                        31 август 2020
+                                        1 август 2020
                                     </div>
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
-                                    </h4>
-                                </a>
-                                <p class="news-section__text">
-                                    В Золотой век войдут люди, которые научатся
-                                    объединяться. И объединение имеет тоже свой
-                                    закон: две ауры усиливают друг друга в 7
-                                    раз, если люди – единомышленники, волна
-                                    одинаковая, в одну цель направлена. Три
-                                    человека – 7 в квадрате, то есть в 49 раз.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- /.news-section__item -->
-                    </div>
-                    <!-- /.news-section -->
-                    
-                    <div class="news-section news-section_double news-section--event">
-                        <div class="news-section__item">
-                            <a href="#">
-                                <div
-                                    class="news-section__images"
-                                    style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
-                                    "
-                                ></div>
-                            </a>
-                            <div class="news-section__content">
-                                <div class="news-section__head">
-                                    <a href="#" class="news-section__category"
-                                        >Новость</a
-                                    >
-                                    <div class="news-section__date">
-                                        31 август 2020
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
+                                        44 Ключевая ставка: роль решений
                                         Центробанка в жизни студентов
                                     </h4>
                                 </a>
@@ -734,87 +802,17 @@
                         </div>
                         <!-- /.news-section__item -->
 
-                        <div class="news-section__item">
-                            <a href="#">
-                                <div
-                                    class="news-section__images"
-                                    style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
-                                    "
-                                ></div>
-                            </a>
-                            <div class="news-section__content">
-                                <div class="news-section__head">
-                                    <a href="#" class="news-section__category"
-                                        >Новость</a
-                                    >
-                                    <div class="news-section__date">
-                                        31 август 2020
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
-                                    </h4>
-                                </a>
-                                <p class="news-section__text crop-text">
-                                    В Золотой век войдут люди, которые научатся
-                                    объединяться. И объединение имеет тоже свой
-                                    закон: две ауры усиливают друг друга в 7
-                                    раз, если люди – единомышленники, волна
-                                    одинаковая, в одну цель направлена. Три
-                                    человека – 7 в квадрате, то есть в 49 раз.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- /.news-section__item -->
-
-                        <div class="news-section__item">
-                            <a href="#">
-                                <div
-                                    class="news-section__images"
-                                    style="
-                                        background-image: url('images/news/news-images.jpg');
-                                    "
-                                ></div>
-                            </a>
-                            <div class="news-section__content">
-                                <div class="news-section__head">
-                                    <a href="#" class="news-section__category"
-                                        >Новость</a
-                                    >
-                                    <div class="news-section__date">
-                                        31 август 2020
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
-                                    </h4>
-                                </a>
-                                <p class="news-section__text">
-                                    В Золотой век войдут люди, которые научатся
-                                    объединяться. И объединение имеет тоже свой
-                                    закон: две ауры усиливают друг друга в 7
-                                    раз, если люди – единомышленники, волна
-                                    одинаковая, в одну цель направлена. Три
-                                    человека – 7 в квадрате, то есть в 49 раз.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- /.news-section__item -->
                     </div>
                     <!-- /.news-section -->
 
-                    <div class="news-section news-section_triple news-section--anons">
+                    <div class="news-section news-section_four news-section--anons">
+
                         <div class="news-section__item">
                             <a href="#">
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
                                     "
                                 ></div>
                             </a>
@@ -824,11 +822,119 @@
                                         >Новость</a
                                     >
                                     <div class="news-section__date">
-                                        31 август 2020
+                                        1 август 2020
                                     </div>
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
+                                        Ключевая ставка: роль решений
+                                        Центробанка в жизни студентов
+                                    </h4>
+                                </a>
+                                <p class="news-section__text crop-text">
+                                    В Золотой век войдут люди, которые научатся
+                                    объединяться. И объединение имеет тоже свой
+                                    закон: две ауры усиливают друг друга в 7
+                                    раз, если люди – единомышленники, волна
+                                    одинаковая, в одну цель направлена. Три
+                                    человека – 7 в квадрате, то есть в 49 раз.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.news-section__item -->
+                        <div class="news-section__item">
+                            <a href="#">
+                                <div
+                                    class="news-section__images"
+                                    style="
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
+                                    "
+                                ></div>
+                            </a>
+                            <div class="news-section__content">
+                                <div class="news-section__head">
+                                    <a href="#" class="news-section__category"
+                                        >Новость</a
+                                    >
+                                    <div class="news-section__date">
+                                        1 август 2020
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h4 class="news-section__title">
+                                        Ключевая
+                                    </h4>
+                                </a>
+                                <p class="news-section__text crop-text">
+                                    В Золотой век войдут люди, которые научатся
+                                    объединяться. И объединение имеет тоже свой
+                                    закон: две ауры усиливают друг друга в 7
+                                    раз, если люди – единомышленники, волна
+                                    одинаковая, в одну цель направлена. Три
+                                    человека – 7 в квадрате, то есть в 49 раз.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.news-section__item -->
+                        <div class="news-section__item">
+                            <a href="#">
+                                <div
+                                    class="news-section__images"
+                                    style="
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
+                                    "
+                                ></div>
+                            </a>
+                            <div class="news-section__content">
+                                <div class="news-section__head">
+                                    <a href="#" class="news-section__category"
+                                        >Новость</a
+                                    >
+                                    <div class="news-section__date">
+                                        1 август 2020
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h4 class="news-section__title">
+                                        Ключевая ставка: роль решений
+                                        Центробанка в жизни студентов
+                                    </h4>
+                                </a>
+                                <p class="news-section__text crop-text">
+                                    В Золотой век войдут люди, которые научатся
+                                    объединяться. И объединение имеет тоже свой
+                                    закон: две ауры усиливают друг друга в 7
+                                    раз, если люди – единомышленники, волна
+                                    одинаковая, в одну цель направлена. Три
+                                    человека – 7 в квадрате, то есть в 49 раз.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.news-section__item -->
+                        
+
+                        <div class="news-section__item">
+                            <a href="#">
+                                <div
+                                    class="news-section__images"
+                                    style="
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
+                                    "
+                                ></div>
+                            </a>
+                            <div class="news-section__content">
+                                <div class="news-section__head">
+                                    <a href="#" class="news-section__category"
+                                        >Новость</a
+                                    >
+                                    <div class="news-section__date">
+                                        2 август 2020
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h4 class="news-section__title">
+                                        Ключевая ставка: роль решений
+                                        Центробанка в жизни студентов
                                         Ключевая ставка: роль решений
                                         Центробанка в жизни студентов
                                     </h4>
@@ -850,7 +956,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://www.ruc.su/upload/iblock/cf2/cf2ebb5b2687c161196f639268813b79.png');
                                     "
                                 ></div>
                             </a>
@@ -916,11 +1022,13 @@
                             </div>
                         </div>
                         <!-- /.news-section__item -->
+                        
                     </div>
                     <!-- /.news-section -->
 
                 </div>
                 <!-- /.news__wrapper -->
+
             </div>
             <!-- /.container -->
         </section>
@@ -982,14 +1090,12 @@
                     <!-- /.programme-tabs -->
 
                     <div class="programme-tabs__body">
+
                         <div id="tab-1" class="programme__content active">
+
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/comida.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
@@ -1004,11 +1110,7 @@
 
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-2"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/crecimiento.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
@@ -1028,11 +1130,7 @@
 
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-3"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/hora.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
@@ -1050,11 +1148,7 @@
 
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-4"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/hotel.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
@@ -1070,11 +1164,7 @@
 
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-5"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/orden.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
@@ -1092,11 +1182,7 @@
 
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-6"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/resultado.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
@@ -1111,311 +1197,166 @@
                                 </div>
                             </a>
                             <!-- /.programme-item -->
+
                         </div>
                         <!-- /.programme__content -->
 
                         <div id="tab-2" class="programme__content">
+
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/orden.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
-                                        Экономика
+                                        Гостиничное дело
                                     </div>
                                     <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
+                                        Отельный бизнес
                                     </div>
+                                    <span class="programme-item__budget"
+                                        >Бюджетные места</span
+                                    >
                                 </div>
                             </a>
                             <!-- /.programme-item -->
+
+                            <a href="#" class="programme-item">
+                                <div class="programme-item__icon">
+                                    <img src="images/programme/resultado.png" alt="">
+                                </div>
+                                <div class="programme-item__text">
+                                    <div class="programme-item__title">
+                                        Менеджмент
+                                    </div>
+                                    <div class="programme-item__descr">
+                                        Маркетинг
+                                    </div>
+                                    <span class="programme-item__budget"
+                                        >Бюджетные места</span
+                                    >
+                                </div>
+                            </a>
+                            <!-- /.programme-item -->
+
                         </div>
                         <!-- /.programme__content -->
 
                         <div id="tab-3" class="programme__content">
+
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/resultado.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
-                                        Экономика
+                                        Менеджмент
                                     </div>
                                     <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
+                                        Маркетинг
                                     </div>
+                                    <span class="programme-item__budget"
+                                        >Бюджетные места</span
+                                    >
                                 </div>
                             </a>
                             <!-- /.programme-item -->
 
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
                         </div>
                         <!-- /.programme__content -->
 
                         <div id="tab-4" class="programme__content">
+
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/resultado.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
-                                        Экономика
+                                        Менеджмент
                                     </div>
                                     <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
+                                        Маркетинг
                                     </div>
+                                    <span class="programme-item__budget"
+                                        >Бюджетные места</span
+                                    >
                                 </div>
                             </a>
                             <!-- /.programme-item -->
 
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
-
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
                         </div>
                         <!-- /.programme__content -->
 
                         <div id="tab-5" class="programme__content">
+
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/resultado.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
-                                        Экономика
+                                        Менеджмент
                                     </div>
                                     <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
+                                        Маркетинг
                                     </div>
+                                    <span class="programme-item__budget"
+                                        >Бюджетные места</span
+                                    >
                                 </div>
                             </a>
                             <!-- /.programme-item -->
 
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
-
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
                         </div>
                         <!-- /.programme__content -->
 
                         <div id="tab-6" class="programme__content">
+
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/resultado.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
-                                        Экономика
+                                        Менеджмент
                                     </div>
                                     <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
+                                        Маркетинг
                                     </div>
+                                    <span class="programme-item__budget"
+                                        >Бюджетные места</span
+                                    >
                                 </div>
                             </a>
                             <!-- /.programme-item -->
 
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
-
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
                         </div>
                         <!-- /.programme__content -->
 
                         <div id="tab-7" class="programme__content">
+
                             <a href="#" class="programme-item">
                                 <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
+                                    <img src="images/programme/resultado.png" alt="">
                                 </div>
                                 <div class="programme-item__text">
                                     <div class="programme-item__title">
-                                        Экономика
+                                        Менеджмент
                                     </div>
                                     <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
+                                        Маркетинг
                                     </div>
+                                    <span class="programme-item__budget"
+                                        >Бюджетные места</span
+                                    >
                                 </div>
                             </a>
                             <!-- /.programme-item -->
 
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
-
-                            <a href="#" class="programme-item">
-                                <div class="programme-item__icon">
-                                    <svg class="programme-item__svg">
-                                        <use
-                                            xlink:href="images/sprite.svg#programme-icon-1"
-                                        ></use>
-                                    </svg>
-                                </div>
-                                <div class="programme-item__text">
-                                    <div class="programme-item__title">
-                                        Экономика
-                                    </div>
-                                    <div class="programme-item__descr">
-                                        Экономика малого и среднего бизнеса
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- /.programme-item -->
                         </div>
                         <!-- /.programme__content -->
+
                     </div>
                     <!-- /.programme-tabs__body -->
                 </div>
@@ -1820,10 +1761,10 @@
                                         ></use>
                                     </svg>
                                 </a>
-                                <a href="#" class="soc__twitter">
+                                <a href="#" class="soc__odnoklassniki">
                                     <svg class="soc__svg">
                                         <use
-                                            xlink:href="images/sprite.svg#twitter"
+                                            xlink:href="images/sprite.svg#odnoklassniki"
                                         ></use>
                                     </svg>
                                 </a>
@@ -1840,6 +1781,7 @@
                             </div>
                         </div>
                         <div class="contacts">
+                            <a href="#" class="button button--red button__modal-question">Задать вопрос ректору</a>
                             <ul>
                                 <li>
                                     Приемная комиссия:
@@ -1880,7 +1822,7 @@
         </footer>
         <!-- /.footer -->
 
-        <div class="modal">
+        <div class="modal modal-branch">
             <div class="modal__wrapper">
                 <div class="modal__body">
                     <div class="close">
@@ -1960,14 +1902,65 @@
         </div>
         <!-- /.modal -->
 
+        <div class="modal modal-question">
+            <div class="modal__wrapper">
+                <div class="modal__body">
+                    <div class="close">
+                        <svg class="close__svg">
+                            <use xlink:href="images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="modal__title">Задать вопрос ректору</h3>
+                    
+                    <div class="ask-a-question">
+            
+                                <form action="#" class="ask-a-question__form">
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-name">Ваше имя:</label>
+                                        <input class="ask-a-question__form-input" type="text" name="q-user-name" id="q-user-name" required зд>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-tel">Ваш телефон:</label>
+                                        <input class="ask-a-question__form-input" type="tel" name="q-user-tel" id="q-user-tel" required>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-email">Ваш E-Mail:</label>
+                                        <input class="ask-a-question__form-input" type="email" name="q-user-email" id="q-user-email" required>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-message">Ваше сообщение:</label>
+                                        <textarea class="ask-a-question__form-textarea" name="q-user-message" id="q-user-message" placeholder="Напишите сообщение..." required></textarea>
+                                    </div>
+                                    
+                                    <button class="button button--red ask-a-question__form-button">Отправить</button>
+                                </form>
+                            
+                        
+                    </div>
+                    <!-- /.ask-a-question -->
+                </div>
+                <!-- /.modal__body -->
+            </div>
+            <!-- /.modal__wrapper -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="up">
+            <svg class="up__svg">
+                <use xlink:href="images/sprite.svg#arrow"></use>
+            </svg>
+        </div>
         <script
-            defer
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         ></script>
+        <script src="js/spec-v-2.js"></script>
         <script defer src="js/jquery.fancybox.min.js"></script>
+        <script defer src="js/imask.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script defer src="js/svgxuse.js" defer></script>
         <script src="js/app.js"></script>
+
     </body>
 </html>
