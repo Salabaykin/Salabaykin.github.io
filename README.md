@@ -9,6 +9,7 @@
 - [https://salabaykin.github.io/ruc/](https://salabaykin.github.io/ruc/)
  > Сайт - https://ruc.su/ 
  > Российский Университет Кооперации 
+ 
  > Доп. страницы: https://salabaykin.github.io/ruc/about.html, https://salabaykin.github.io/ruc/student.html
 
 - [https://salabaykin.github.io/Eco/](https://salabaykin.github.io/Eco/)
