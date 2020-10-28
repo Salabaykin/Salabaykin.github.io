@@ -1,6 +1,6 @@
 В работе использовал препроцессор Sass и планировщик задач Gulp. 
 
-- https://salabaykin.github.io/Nefonar/ (Функционал не реализован, только верстка)
+- [https://salabaykin.github.io/Nefonar/](https://salabaykin.github.io/Nefonar/) (Функционал не реализован, только верстка)
  > Агрегатор групп What’s App заданной тематики, на котором предоставляют доступ зарегистрированным пользователям к лентам сообщений данных групп.
 
 - https://salabaykin.github.io/Volga/
