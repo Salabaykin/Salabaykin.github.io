@@ -7,9 +7,9 @@
  > Профессиональные услуги по изготовлению и монтажу фундамента.
 
 - [https://salabaykin.github.io/ruc/](https://salabaykin.github.io/ruc/)
- > Доп. страницы: https://salabaykin.github.io/ruc/about.html, https://salabaykin.github.io/ruc/student.html
  > Сайт - https://ruc.su/ 
  > Российский Университет Кооперации 
+ > Доп. страницы: https://salabaykin.github.io/ruc/about.html, https://salabaykin.github.io/ruc/student.html
 
 - [https://salabaykin.github.io/Eco/](https://salabaykin.github.io/Eco/)
  > Интернет-магазин по продаже экологически чистых продуктов питания. 
