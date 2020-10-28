@@ -364,10 +364,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const toggleClose = () => {
     searchButton.innerHTML = searchButton.classList.contains('active')
     ? `<svg class="search-button__icon">
-        <use xlink:href="/images/sprite.svg#close"></use>
+        <use xlink:href="images/sprite.svg#close"></use>
       </svg>`
     : `<svg class="search-button__icon">
-        <use xlink:href="/images/sprite.svg#search"></use>
+        <use xlink:href="images/sprite.svg#search"></use>
       </svg>`;
   }
 
